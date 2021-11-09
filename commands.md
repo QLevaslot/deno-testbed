@@ -12,3 +12,8 @@ deno run read-request.ts
 
  // import-map
  deno run --import-map=import_map.json color.ts
+
+
+ // Bundling (import map example)
+ deno bundle --import-map=import_map.json .\color.ts color.js 
+ deno compile --import-map=import_map.json .\color.ts color.js 
